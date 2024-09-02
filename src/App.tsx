@@ -1,11 +1,11 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import UserSelector from './components/UserSelector';
+import UserSelector, { User } from './components/UserSelector';
 
 function App() {
-  const handleUserSelect = () => {
-    
+  const handleUserSelect = (data: User | User[]) => {
+    console.log(data);
   }
   return (
     <div className="App">
